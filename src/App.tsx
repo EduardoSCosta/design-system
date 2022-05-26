@@ -1,14 +1,11 @@
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from './GlobalStyles';
-import theme from './theme';
+import DesignSystem from './view/components/DesingSystem';
 import IconsPage from './view/pages/IconsPage';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
+    <DesignSystem>
       <IconsPage />
-    </ ThemeProvider>
+    </DesignSystem>
   );
 }
 

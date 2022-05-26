@@ -2,17 +2,18 @@ import styled, { css } from 'styled-components';
 import { ReactComponent as Mail } from '../../assets/icons/mail.svg';
 import { ReactComponent as Save } from '../../assets/icons/save.svg';
 import { ReactComponent as Sync } from '../../assets/icons/sync.svg';
+import { Colors } from '../../theme';
 
 interface IconProps {
-  fill?: string;
-  height?: string | number;
-  width?: string | number;
+  fill?: Colors;
+  height?: string;
+  width?: string;
 }
 
 const iconStyles = css<IconProps>`
   width: ${props => props.width};
   height: ${props => props.height};
-  fill: ${props => props.fill};
+  fill: ${props => props.fill ? props.theme.colors[props.fill] : props.theme.colors['gray900']};
 `
 
 export const MailIcon = styled(Mail)<IconProps>`
