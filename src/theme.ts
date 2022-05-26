@@ -1,3 +1,5 @@
+export type Colors = keyof typeof theme.colors;
+
 const colors = {
   blue500: '#40A9FF',
   blue600: '#1890FF',
@@ -12,13 +14,50 @@ const colors = {
 
 }
 
-const space = [0, 2, 4, 8, 16, 32, 64].map(value => `${value}px`);
+const space = {
+  none: '0px',
+  xSmall: '2px',
+  small: '4px',
+  medium: '8px',
+  large: '16px',
+  xLarge: '32px',
+  xxLarge: '64px',
+}
 
-const fontSizes = [8, 12, 16, 20, 24, 28, 32].map(value => `${value}px`);
+const fontSizes = {
+  xxSmall: '8px',
+  xSmall: '12px',
+  small: '16px',
+  medium: '20px',
+  large: '24px',
+  xLarge: '28px',
+  xxLarge: '32px',
+}
 
-const radii = [0, 5, 10, 15, 20, 25, 30].map(value => `${value}px`);
+const radii = {
+  none: '0px',
+  xSmall: '5px',
+  small: '10px',
+  medium: '15px',
+  large: '20px',
+  xLarge: '25px',
+  xxLarge: '30px',
+}
 
-const sizes = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600].map(value => `${value}px`);
+const sizes = {
+  size50: '50px',
+  size100: '100px',
+  size150: '150px',
+  size200: '200px',
+  size250: '250px',
+  size300: '300px',
+  size350: '350px',
+  size400: '400px',
+  size450: '450px',
+  size500: '500px',
+  size550: '550px',
+  size600: '600px'
+}
 
 const theme = {
   colors,
@@ -27,5 +66,6 @@ const theme = {
   radii,
   sizes
 }
+
 
 export default theme;
