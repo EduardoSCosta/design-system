@@ -4,7 +4,7 @@ import { MailIcon, SaveIcon, SyncIcon } from '../components/Icon';
 const IconsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: ${({ theme }) => theme.sizes[3]};
+  width: 150px;
   margin: ${({ theme }) => theme.space[3]};
 `;
 
