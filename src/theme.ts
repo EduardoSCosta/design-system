@@ -44,27 +44,11 @@ const radii = {
   xxLarge: '30px',
 }
 
-const sizes = {
-  size50: '50px',
-  size100: '100px',
-  size150: '150px',
-  size200: '200px',
-  size250: '250px',
-  size300: '300px',
-  size350: '350px',
-  size400: '400px',
-  size450: '450px',
-  size500: '500px',
-  size550: '550px',
-  size600: '600px'
-}
-
 const theme = {
   colors,
   space,
   fontSizes,
-  radii,
-  sizes
+  radii
 }
 
 
