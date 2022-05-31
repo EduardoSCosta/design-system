@@ -5,7 +5,7 @@ const colors = {
   blue600: '#1890FF',
   blue700: '#096DD9',
 
-  gray100: '#F2F2F2',
+  gray100: '#FCFCFC',
   gray200: '#FAFAFA',
   gray300: '#F5F5F5',
   gray500: '#D9D9D9',
