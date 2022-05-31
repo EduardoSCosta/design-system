@@ -5,7 +5,9 @@ const IconsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 150px;
-  margin: ${({ theme }) => theme.space[3]};
+  justify-items: center;
+  margin-top: ${({ theme }) => theme.space.large};
+  margin-bottom: ${({ theme }) => theme.space.xLarge};
 `;
 
 const IconsPage = () => {

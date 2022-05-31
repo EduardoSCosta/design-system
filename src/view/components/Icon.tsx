@@ -13,7 +13,7 @@ interface IconProps {
 const iconStyles = css<IconProps>`
   width: ${props => props.width};
   height: ${props => props.height};
-  fill: ${props => props.fill ? props.theme.colors[props.fill] : props.theme.colors['gray900']};
+  fill: ${props => props.fill ? props.theme.colors[props.fill] : 'currentColor'};
 `
 
 export const MailIcon = styled(Mail)<IconProps>`
