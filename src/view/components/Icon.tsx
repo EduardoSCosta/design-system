@@ -10,11 +10,30 @@ interface IconProps {
   width?: string;
 }
 
+interface IconsMapType {
+  [key: string]: React.FC<React.SVGProps<SVGSVGElement>>;
+}
+
+const iconsMap : IconsMapType = {
+  mail: Mail
+}
+
+
 const iconStyles = css<IconProps>`
   width: ${props => props.width};
   height: ${props => props.height};
   fill: ${props => props.fill ? props.theme.colors[props.fill] : 'currentColor'};
-`
+  `
+
+const getComponent = (iconName: string) : React.FC<React.SVGProps<SVGSVGElement>> => {
+  if(!iconsMap[iconName]) return iconsMap.mail;
+
+  return iconsMap[iconName]
+}
+
+export const Icon = ({iconName}: {iconName : string}) => styled(iconsMap[iconName])<IconProps>`
+  ${iconStyles}
+`;
 
 export const MailIcon = styled(Mail)<IconProps>`
   ${iconStyles}
