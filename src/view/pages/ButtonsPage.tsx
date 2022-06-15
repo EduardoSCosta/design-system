@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Button } from '../components/Button';
-import { MailIcon } from '../components/Icon';
+import { Icon } from '../components/Icon';
 
 const ButtonsContainer = styled.div`
   display: grid;
@@ -54,79 +54,79 @@ const ButtonsPage = () => {
       </ButtonsContainer>
 
       <ButtonsContainer>
-        <Button variant='primary' size='large'><MailIcon /> Button</Button>
-        <Button variant='default' size='large'><MailIcon /> Button</Button>
-        <Button variant='dashed' size='large'><MailIcon /> Button</Button>
-        <Button variant='text' size='large'><MailIcon /> Button</Button>
-        <Button variant='link' size='large'><MailIcon /> Button</Button>
+        <Button variant='primary' size='large' icon='mail'> Button</Button>
+        <Button variant='default' size='large' icon='mail'> Button</Button>
+        <Button variant='dashed' size='large' icon='mail'> Button</Button>
+        <Button variant='text' size='large' icon='mail'> Button</Button>
+        <Button variant='link' size='large' icon='mail'> Button</Button>
 
-        <Button variant='primary' size='large' disabled><MailIcon /> Button</Button>
-        <Button variant='default' size='large' disabled><MailIcon /> Button</Button>
-        <Button variant='dashed' size='large' disabled><MailIcon /> Button</Button>
-        <Button variant='text' size='large' disabled><MailIcon /> Button</Button>
-        <Button variant='link' size='large' disabled><MailIcon /> Button</Button>
+        <Button variant='primary' size='large' icon='mail' disabled> Button</Button>
+        <Button variant='default' size='large' icon='mail' disabled> Button</Button>
+        <Button variant='dashed' size='large' icon='mail' disabled> Button</Button>
+        <Button variant='text' size='large' icon='mail' disabled> Button</Button>
+        <Button variant='link' size='large' icon='mail' disabled> Button</Button>
 
-        <Button variant='primary' size='middle'><MailIcon /> Button</Button>
-        <Button variant='default' size='middle'><MailIcon /> Button</Button>
-        <Button variant='dashed' size='middle'><MailIcon /> Button</Button>
-        <Button variant='text' size='middle'><MailIcon /> Button</Button>
-        <Button variant='link' size='middle'><MailIcon /> Button</Button>
+        <Button variant='primary' size='middle' icon='mail'> Button</Button>
+        <Button variant='default' size='middle' icon='mail'> Button</Button>
+        <Button variant='dashed' size='middle' icon='mail'> Button</Button>
+        <Button variant='text' size='middle' icon='mail'> Button</Button>
+        <Button variant='link' size='middle' icon='mail'> Button</Button>
 
-        <Button variant='primary' size='middle' disabled><MailIcon /> Button</Button>
-        <Button variant='default' size='middle' disabled><MailIcon /> Button</Button>
-        <Button variant='dashed' size='middle' disabled><MailIcon /> Button</Button>
-        <Button variant='text' size='middle' disabled><MailIcon /> Button</Button>
-        <Button variant='link' size='middle' disabled><MailIcon /> Button</Button>
+        <Button variant='primary' size='middle' icon='mail' disabled> Button</Button>
+        <Button variant='default' size='middle' icon='mail' disabled> Button</Button>
+        <Button variant='dashed' size='middle' icon='mail' disabled> Button</Button>
+        <Button variant='text' size='middle' icon='mail' disabled> Button</Button>
+        <Button variant='link' size='middle' icon='mail' disabled> Button</Button>
 
-        <Button variant='primary' size='small' ><MailIcon /> Button</Button>
-        <Button variant='default' size='small' ><MailIcon /> Button</Button>
-        <Button variant='dashed' size='small' ><MailIcon /> Button</Button>
-        <Button variant='text' size='small' ><MailIcon /> Button</Button>
-        <Button variant='link' size='small' ><MailIcon /> Button</Button>
+        <Button variant='primary' size='small'  icon='mail'> Button</Button>
+        <Button variant='default' size='small'  icon='mail'> Button</Button>
+        <Button variant='dashed' size='small'  icon='mail'> Button</Button>
+        <Button variant='text' size='small'  icon='mail'> Button</Button>
+        <Button variant='link' size='small'  icon='mail'> Button</Button>
 
-        <Button variant='primary' size='small' disabled><MailIcon /> Button</Button>
-        <Button variant='default' size='small' disabled><MailIcon /> Button</Button>
-        <Button variant='dashed' size='small' disabled><MailIcon /> Button</Button>
-        <Button variant='text' size='small' disabled><MailIcon /> Button</Button>
-        <Button variant='link' size='small' disabled><MailIcon /> Button</Button>
+        <Button variant='primary' size='small' icon='mail' disabled> Button</Button>
+        <Button variant='default' size='small' icon='mail' disabled> Button</Button>
+        <Button variant='dashed' size='small' icon='mail' disabled> Button</Button>
+        <Button variant='text' size='small' icon='mail' disabled> Button</Button>
+        <Button variant='link' size='small' icon='mail' disabled> Button</Button>
       </ButtonsContainer>
 
       <ButtonsContainer>
-        <Button variant='primary' size='large'><MailIcon /> </Button>
-        <Button variant='default' size='large'><MailIcon /> </Button>
-        <Button variant='dashed' size='large'><MailIcon /> </Button>
-        <Button variant='text' size='large'><MailIcon /> </Button>
-        <Button variant='link' size='large'><MailIcon /> </Button>
+        <Button variant='primary' size='large' icon='mail'> </Button>
+        <Button variant='default' size='large' icon='mail'> </Button>
+        <Button variant='dashed' size='large' icon='mail'> </Button>
+        <Button variant='text' size='large' icon='mail'> </Button>
+        <Button variant='link' size='large' icon='mail'> </Button>
 
-        <Button variant='primary' size='large' disabled><MailIcon /> </Button>
-        <Button variant='default' size='large' disabled><MailIcon /> </Button>
-        <Button variant='dashed' size='large' disabled><MailIcon /> </Button>
-        <Button variant='text' size='large' disabled><MailIcon /> </Button>
-        <Button variant='link' size='large' disabled><MailIcon /> </Button>
+        <Button variant='primary' size='large' icon='mail' disabled> </Button>
+        <Button variant='default' size='large' icon='mail' disabled> </Button>
+        <Button variant='dashed' size='large' icon='mail' disabled> </Button>
+        <Button variant='text' size='large' icon='mail' disabled> </Button>
+        <Button variant='link' size='large' icon='mail' disabled> </Button>
 
-        <Button variant='primary' size='middle'><MailIcon /> </Button>
-        <Button variant='default' size='middle'><MailIcon /> </Button>
-        <Button variant='dashed' size='middle'><MailIcon /> </Button>
-        <Button variant='text' size='middle'><MailIcon /> </Button>
-        <Button variant='link' size='middle'><MailIcon /> </Button>
+        <Button variant='primary' size='middle' icon='mail'> </Button>
+        <Button variant='default' size='middle' icon='mail'> </Button>
+        <Button variant='dashed' size='middle' icon='mail'> </Button>
+        <Button variant='text' size='middle' icon='mail'> </Button>
+        <Button variant='link' size='middle' icon='mail'> </Button>
 
-        <Button variant='primary' size='middle' disabled><MailIcon /> </Button>
-        <Button variant='default' size='middle' disabled><MailIcon /> </Button>
-        <Button variant='dashed' size='middle' disabled><MailIcon /> </Button>
-        <Button variant='text' size='middle' disabled><MailIcon /> </Button>
-        <Button variant='link' size='middle' disabled><MailIcon /> </Button>
+        <Button variant='primary' size='middle' icon='mail' disabled> </Button>
+        <Button variant='default' size='middle' icon='mail' disabled> </Button>
+        <Button variant='dashed' size='middle' icon='mail' disabled> </Button>
+        <Button variant='text' size='middle' icon='mail' disabled> </Button>
+        <Button variant='link' size='middle' icon='mail' disabled> </Button>
 
-        <Button variant='primary' size='small' ><MailIcon /> </Button>
-        <Button variant='default' size='small' ><MailIcon /> </Button>
-        <Button variant='dashed' size='small' ><MailIcon /> </Button>
-        <Button variant='text' size='small' ><MailIcon /> </Button>
-        <Button variant='link' size='small' ><MailIcon /> </Button>
+        <Button variant='primary' size='small'  icon='mail'> </Button>
+        <Button variant='default' size='small'  icon='mail'> </Button>
+        <Button variant='dashed' size='small'  icon='mail'> </Button>
+        <Button variant='text' size='small'  icon='mail'> </Button>
+        <Button variant='link' size='small'  icon='mail'> </Button>
 
-        <Button variant='primary' size='small' disabled><MailIcon /> </Button>
-        <Button variant='default' size='small' disabled><MailIcon /> </Button>
-        <Button variant='dashed' size='small' disabled><MailIcon /> </Button>
-        <Button variant='text' size='small' disabled><MailIcon /> </Button>
-        <Button variant='link' size='small' disabled><MailIcon /> </Button>
+        <Button variant='primary' size='small' icon='mail' disabled> </Button>
+        <Button variant='default' size='small' icon='mail' disabled> </Button>
+        <Button variant='dashed' size='small' icon='mail' disabled> </Button>
+        <Button variant='text' size='small' icon='mail' disabled> </Button>
+        <Button variant='link' size='small' icon='mail' disabled> </Button>
       </ButtonsContainer>
     </>
   )

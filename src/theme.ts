@@ -11,7 +11,6 @@ const colors = {
   gray500: '#D9D9D9',
   gray600: '#BFBFBF',
   gray900: '#262626',
-
 }
 
 const space = {

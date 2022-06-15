@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components';
+import styled, { css, DefaultTheme } from 'styled-components';
+import { Icon } from './Icon';
 
 type variantTypes = 'primary' | 'dashed' | 'link' | 'text' | 'default';
 
@@ -9,9 +10,10 @@ interface ButtonProps {
   variant?: variantTypes;
   size?: sizeTypes;
   children?: React.ReactNode;
+  icon?: string;
 }
 
-const buttonVariants = (variant: variantTypes = 'primary', theme: any) => {
+const buttonVariants = (variant: variantTypes = 'primary', theme: DefaultTheme) => {
   const variantStyles = {
     primary: css`
       background-color: ${theme.colors.blue600};
@@ -138,7 +140,7 @@ const buttonVariants = (variant: variantTypes = 'primary', theme: any) => {
   return variantStyles[variant];
 }
 
-const buttonSizes = (size: sizeTypes = 'large', theme: any) => {
+const buttonSizes = (size: sizeTypes = 'large', theme: DefaultTheme) => {
   const sizeStyles = {
     small: css`
       padding: ${theme.space.xSmall} ${theme.space.medium};
@@ -170,13 +172,14 @@ export const StyledButton = styled.button<ButtonProps>`
   }
 `
 
-export const Button = ({ disabled, variant, size, children }: ButtonProps) => {
+export const Button = ({ disabled, variant, size, icon, children }: ButtonProps) => {
   return (
     <StyledButton
       disabled={disabled}
       variant={variant}
       size={size}
     >
+      {icon && <Icon name={icon} height='20px' width='20px'/>}
       {children}
     </StyledButton>
   );
