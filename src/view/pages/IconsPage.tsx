@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MailIcon, SaveIcon, SyncIcon } from '../components/Icon';
+import { Icon } from '../components/Icon';
 
 const IconsContainer = styled.div`
   display: grid;
@@ -15,9 +15,9 @@ const IconsPage = () => {
     <>
       <h1>Icons</h1>
       <IconsContainer>
-        <MailIcon />
-        <SaveIcon />
-        <SyncIcon />
+        <Icon name='mail' width='20px' height='20px' />
+        <Icon name='sync' width='20px' height='20px' />
+        <Icon name='save' width='20px' height='20px' />
       </IconsContainer>
     </>
   )
