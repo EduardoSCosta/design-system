@@ -19,10 +19,9 @@ export const StyledCheckbox = styled.input.attrs({
     display: inline-block;
     width: 16px;
     height: 16px;
-    font-size: 14px;
     border: 1px solid ${({ theme }) => theme.colors.gray500};
     border-radius: 2px;
-    margin-right: 10px;
+    margin-right: ${({ theme }) => theme.space.medium};
 
     &:hover {
       border-color: ${({ theme }) => theme.colors.blue600};
@@ -34,18 +33,26 @@ export const StyledCheckbox = styled.input.attrs({
       border-color: ${({ theme }) => theme.colors.blue600};
   }
 
-  &:disabled+label:before{
-    background-color: ${({ theme }) => theme.colors.gray300};
-    border-color: ${({ theme }) => theme.colors.gray500};
-    cursor: not-allowed;
+  &:disabled {
+    +label{
+      color: ${({ theme }) => theme.colors.gray600};
+      cursor: not-allowed;
+    }
+
+    +label:before {
+      background-color: ${({ theme }) => theme.colors.gray300};
+      border-color: ${({ theme }) => theme.colors.gray500};
+      cursor: not-allowed;
+    }
   }
 
-  &:checked:checked+label:before {
+  &:checked+label:before {
     content: '\\2713';
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     color: ${({ theme }) => theme.colors.gray100};
+    font-size: 12px;
     font-weight: bold;
     background-color: ${({ theme }) => theme.colors.blue600};
   }
@@ -60,6 +67,7 @@ export const StyledLabel = styled.label`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: ${({ theme }) => theme.colors.gray900};
 `
 
 export const Checkbox = ({ checked, onChange, id, disabled, value, children }: CheckboxProps) => {
