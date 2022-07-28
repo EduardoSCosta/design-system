@@ -1,0 +1,111 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Button } from '../view/components/Button';
+import DesignSystem from '../view/components/DesingSystem';
+
+<Meta
+  title='Components/Button'
+  parameters={{
+    layout: 'centered',
+  }}
+  component={Button}
+/>
+
+export const Template = (args) => <DesignSystem><Button {...args}></Button></DesignSystem>;
+
+# Button
+This is the Button component.
+
+## Variants
+A Button can have different variants.
+
+<Canvas>
+  <Story
+    name='Primary'
+    parameters={{ layout: 'centered' }}
+    args={{ 
+      variant: 'primary',
+      children: 'Primary Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Default'
+    args={{ 
+        variant: 'default',
+        children: 'Default Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Dashed'
+    args={{ 
+        variant: 'dashed',
+        children: 'Dashed Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Link'
+    args={{ 
+        variant: 'link',
+        children: 'Link Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Text'
+    args={{ 
+        variant: 'text',
+        children: 'Text Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Sizes
+A Button can have different sizes.
+
+<Canvas>
+  <Story
+    name='Small'
+    parameters={{ layout: 'centered' }}
+    args={{ 
+        size: 'small',
+        children: 'Small Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Middle'
+    args={{ 
+        size: 'middle',
+        children: 'Middle Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Large'
+    args={{ 
+        size: 'large',
+        children: 'Large Button'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Icons
+A Button can accept icons.
+
+<Canvas>
+  <Story
+    name='Icon'
+    parameters={{ layout: 'centered' }}
+    args={{ 
+        icon: 'save',
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Properties
+<ArgsTable of={Button} />
