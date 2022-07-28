@@ -1,0 +1,52 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Checkbox } from '../view/components/Checkbox';
+import DesignSystem from '../view/components/DesingSystem';
+
+<Meta
+  title='Components/Checkbox'
+  parameters={{
+    layout: 'centered',
+  }}
+  component={Checkbox}
+/>
+
+export const Template = (args) => <DesignSystem><Checkbox {...args}></Checkbox></DesignSystem>;
+
+# Checkbox
+This is the Checkbox component.
+
+## Without label
+<Canvas>
+  <Story name='Unchecked' >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Checked'
+    args={{ 
+      checked: true
+    }} >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With label
+<Canvas>
+  <Story
+    name='Unchecked with label' 
+    args={{ 
+      children: "Label"
+    }} >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Checked with label'
+    args={{ 
+      checked: true,
+      children: "Label"
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Properties
+<ArgsTable of={Checkbox} />
