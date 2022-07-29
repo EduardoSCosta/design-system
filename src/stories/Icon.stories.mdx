@@ -1,0 +1,51 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Icon } from '../view/components/Icon';
+import DesignSystem from '../view/components/DesingSystem';
+
+<Meta
+  title='Components/Icon'
+  parameters={{
+    layout: 'centered',
+  }}
+  component={Icon}
+/>
+
+export const Template = (args) => <DesignSystem><Icon {...args}/></DesignSystem>;
+
+# Icon
+This is the Icon component.
+
+## Names
+There are different icons that can be selected through the "name" property.
+
+<Canvas>
+  <Story
+    name='Mail'
+    parameters={{ layout: 'centered' }}
+    args={{
+        name: 'mail',
+        height:'30px'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Save'
+    args={{ 
+        name: 'save',
+        height:'30px'
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story
+    name='Sync'
+    args={{ 
+        name: 'sync',
+        height:'30px'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Properties
+
+<ArgsTable of={Icon} />
